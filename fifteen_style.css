@@ -34,7 +34,9 @@ h1 {
 
 /* This class should be applied to each of the 15 puzzle pieces. */
 .puzzlepiece {
-        background-image: url(images/lsp.png);
+        background-image: url(mickey.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px solid black;
         height: 96px;
         line-height: 96px;
