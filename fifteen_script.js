@@ -27,7 +27,7 @@ document.onreadystatechange = function () {
 
       function celebrate() {
         //http://rack.2.mshcdn.com/media/ZgkyMDEzLzA4LzA1LzYyL2FuY2hvcm1hbi42NjJkYS5naWYKcAl0aHVtYgk4NTB4ODUwPgplCWpwZw/e36d14bd/1c0/anchorman.jpg
-        document.getElementById("puzzlearea").innerHTML = "<div><img onclick='location.reload();' src='https://tenor.com/view/snoop-dogg-rap-hip-hop-west-coast-crips-gif-24898891'/></div><br /><h1 onclick='location.reload();'>Good Job</h1>";
+        document.getElementById("puzzlearea").innerHTML = "<div><img onclick='location.reload();' src='http://rack.2.mshcdn.com/media/ZgkyMDEzLzA4LzA1LzYyL2FuY2hvcm1hbi42NjJkYS5naWYKcAl0aHVtYgk4NTB4ODUwPgplCWpwZw/e36d14bd/1c0/anchorman.jpg'/></div><br /><h1 onclick='location.reload();'>Good Job</h1>";
         document.getElementById("shufflebutton").outerHTML = ""
       }
 
