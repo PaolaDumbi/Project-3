@@ -8,7 +8,7 @@ document.onreadystatechange = function () {
 
       var puzzleAreaContents = document.getElementById("puzzlearea").children;
       var shuffleTracker = 0;
-      var numberOfMoves = 21;
+      var numberOfMoves = 0;
       // insert counter html
       document.getElementById("overall").insertAdjacentHTML('beforeend', "number of moves: <span id='numberOfMoves'>0</span>");
 
