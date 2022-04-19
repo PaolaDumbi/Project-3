@@ -1,4 +1,5 @@
 document.onreadystatechange = function () {
+	
     if (document.readyState == "complete") {
       var grid =  [[0,0,false],[100,0,false],[200,0,false],[300,0,false],
                    [0,100,false],[100,100,false],[200,100,false],[300,100,false],
@@ -26,8 +27,7 @@ document.onreadystatechange = function () {
       function reload() {alert("hey") }
 
       function celebrate() {
-        //http://rack.2.mshcdn.com/media/ZgkyMDEzLzA4LzA1LzYyL2FuY2hvcm1hbi42NjJkYS5naWYKcAl0aHVtYgk4NTB4ODUwPgplCWpwZw/e36d14bd/1c0/anchorman.jpg
-        document.getElementById("puzzlearea").innerHTML = "<div><img onclick='location.reload();' src='http://rack.2.mshcdn.com/media/ZgkyMDEzLzA4LzA1LzYyL2FuY2hvcm1hbi42NjJkYS5naWYKcAl0aHVtYgk4NTB4ODUwPgplCWpwZw/e36d14bd/1c0/anchorman.jpg'/></div><br /><h1 onclick='location.reload();'>Good Job</h1>";
+	  document.getElementById("puzzlearea").innerHTML = "<div id = 'endPic'><img src='end.jpg'/></div><br /> <h6 onclick='location.reload();'> You have caught them all!!! (click me to play again!)</h6>";
         document.getElementById("shufflebutton").outerHTML = ""
       }
 
@@ -150,7 +150,6 @@ document.onreadystatechange = function () {
           puzzleAreaContents[i].style.top = y+"px" ;
           puzzleAreaContents[i].style.left = x+"px" ;
           // set backgroundPosition - use negative numbers 
-          // because I don't know why, but it magically works 
           puzzleAreaContents[i].style.backgroundPosition = "-"+x+"px "+"-"+y+"px" ;
           // increment x by 100 until each 4th columm, then increment y and reset x to 0
           if (x==300)
@@ -159,7 +158,6 @@ document.onreadystatechange = function () {
           else{var x = x + 100;}
         }
         // add 16th "empty" element, makes the whole thing a lot easier to troubleshoot
-        // it moves around the htmlCollection just like the other elements
         document.getElementById("puzzlearea").innerHTML = document.getElementById("puzzlearea").innerHTML + "<div class='empty'></div>"
         addEventListeners(getArrayOfMovableCells());
       }
